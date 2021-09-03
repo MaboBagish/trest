@@ -31,11 +31,51 @@ public class Dictionary implements Connectable {
     }
 
     @Override
+    public void connectBase() {
+
+    }
+
+    @Override
     public void read(int index) throws Exception {
         if(isConnect == false){
             throw  new Exception (  );
         }else {
             System.out.println ( );
         }
+    }
+
+    @Override
+    public void scan(int key) {
+
+    }
+
+    @Override
+    public void readKey(int key) {
+
+    }
+
+    @Override
+    public void readBaseGroup(int[] key) {
+
+    }
+
+    @Override
+    public void scanValueBase() {
+
+    }
+
+    @Override
+    public void recBase() {
+
+    }
+
+    @Override
+    public void replaceIndex(int index) {
+
+    }
+
+    @Override
+    public void replaceKey(int index) {
+
     }
 }
