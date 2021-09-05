@@ -1,5 +1,6 @@
 public interface Connectable {
-String[] reternSomeStrings(int index, int count);
+
+String[] reternSomeStrings(int index, int count) throws Exception;
 String[] reternSomeStringsNew(int startIndex, int endindex);
 String reternStringByKey(String key);
 

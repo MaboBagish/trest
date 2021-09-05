@@ -1,13 +1,16 @@
+
+
 public class ConnectToDataBase implements Connectable {
     private Dictionary[] strings;
 
 
     public ConnectToDataBase() {
-        strings = new Dictionary[]{
-                new Dictionary ("key1", "value1"),
-                new Dictionary ("key2", "value2"),
-                new Dictionary ("key3", "value3")
-        };
+
+//        strings = new Dictionary[]{
+//                new Dictionary (strings, "key", "value"),
+//                new Dictionary ((Long) fact.get ("id"), "key", "value"),
+//                new Dictionary ((Long) fact.get ("id"), "key", "value")
+//        };
 //        strings = new String[]{
 //                "Ivan",
 //                "Petya",

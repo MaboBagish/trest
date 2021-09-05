@@ -1,10 +1,20 @@
 public class Dictionary implements Connectable {
 
-    public Dictionary(String key, String value) {
+    public Dictionary(Long index, String key, String value) {
         this.key = key;
         this.value = value;
+        this.index = index;
     }
 
+    public Long getIndex() {
+        return index;
+    }
+
+    public void setIndex(Long index) {
+        this.index = index;
+    }
+
+    private  Long index;
     private String key;
 
     public String getKey() {
@@ -24,6 +34,7 @@ public class Dictionary implements Connectable {
     }
 
     private String value;
+
     private boolean isConnect;
 
     @Override
@@ -46,9 +57,12 @@ public class Dictionary implements Connectable {
         isConnect = true;
     }
 
+
+
     @Override
     public void closeConnection() {
         isConnect = false;
+
     }
 
     @Override
