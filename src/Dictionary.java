@@ -1,4 +1,10 @@
 public class Dictionary implements Connectable {
+
+    public Dictionary(String key, String value) {
+        this.key = key;
+        this.value = value;
+    }
+
     private String key;
 
     public String getKey() {
@@ -19,6 +25,21 @@ public class Dictionary implements Connectable {
 
     private String value;
     private boolean isConnect;
+
+    @Override
+    public String[] reternSomeStrings(int index, int count) {
+        return new String[0];
+    }
+
+    @Override
+    public String[] reternSomeStringsNew(int startIndex, int endindex) {
+        return new String[0];
+    }
+
+    @Override
+    public String reternStringByKey(String key) {
+        return null;
+    }
 
     @Override
     public void openConnection() {

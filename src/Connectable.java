@@ -1,4 +1,7 @@
 public interface Connectable {
+String[] reternSomeStrings(int index, int count);
+String[] reternSomeStringsNew(int startIndex, int endindex);
+String reternStringByKey(String key);
 
     void openConnection();
     void closeConnection();
