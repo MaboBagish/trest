@@ -14,7 +14,7 @@ public class Dictionary implements Connectable {
         this.index = index;
     }
 
-    private  Long index;
+    private Long index;
     private String key;
 
     public String getKey() {

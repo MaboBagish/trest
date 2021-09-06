@@ -1,27 +1,19 @@
 
 
 public class ConnectToDataBase implements Connectable {
-    private Dictionary[] strings;
+    private Dictionary[] dictionaries;
 
 
     public ConnectToDataBase() {
 
-//        strings = new Dictionary[]{
-//                new Dictionary (strings, "key", "value"),
-//                new Dictionary ((Long) fact.get ("id"), "key", "value"),
-//                new Dictionary ((Long) fact.get ("id"), "key", "value")
-//        };
-//        strings = new String[]{
-//                "Ivan",
-//                "Petya",
-//                "Denis",
-//                "Vasya",
-//                "Sergey"
-//        };
+        dictionaries = new Dictionary[]{
+
+        };
+
     }
 
     public ConnectToDataBase(Dictionary[] strings) {
-        this.strings = strings;
+        this.dictionaries = strings;
     }
 
     @Override
@@ -32,7 +24,7 @@ public class ConnectToDataBase implements Connectable {
 
 
             for (int i = index; i < index + count; i++) {
-                str += strings[i] + " ";
+                str += dictionaries[i] + " ";
             }
 
         String[] newStrings = str.split (" ");
@@ -48,7 +40,7 @@ public class ConnectToDataBase implements Connectable {
     @Override
     public String reternStringByKey(String key) {
         String result = "";
-        for (Dictionary d : strings){
+        for (Dictionary d : dictionaries){
 if (d.getKey ().equals (key)){
     result = d.getValue ();
 }

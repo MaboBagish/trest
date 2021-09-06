@@ -19,13 +19,13 @@ public class Main {
 
 
 
-//ConnectToDataBase c = new ConnectToDataBase (  );
-////String[] strings = c.reternSomeStrings (0,3);
-////for (String s : strings){
-////    System.out.println (s);
-////}
-//String result = c.reternStringByKey ("key1" );
-//        System.out.println (result );
+ConnectToDataBase c = new ConnectToDataBase (  );
+String[] strings = c.reternSomeStrings (0,3);
+for (String s : strings){
+    System.out.println (s);
+}
+String result = c.reternStringByKey ("");
+        System.out.println (result );
 
     }
     private static void printDictionary(Dictionary dictionary){
