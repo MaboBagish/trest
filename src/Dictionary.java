@@ -1,4 +1,13 @@
 public class Dictionary implements Connectable {
+    @Override
+    public String toString() {
+        return "Dictionary{" +
+                "index=" + index +
+                ", key='" + key + '\'' +
+                ", value='" + value + '\'' +
+                ", isConnect=" + isConnect +
+                '}';
+    }
 
     public Dictionary(Long index, String key, String value) {
         this.key = key;

@@ -13,14 +13,17 @@ public class Main {
 
         System.out.println ("\nId|      key       | value      ");
         System.out.println ("--+-----------------+--------------+-------");
+
         for (Dictionary dictionary: dictionaries){
             printDictionary (dictionary);
         }
+        System.out.println ("" );
+        System.out.println ("----------------------------" );
 
 
 
 ConnectToDataBase c = new ConnectToDataBase (  );
-String[] strings = c.reternSomeStrings (0,3);
+String[] strings = c.reternSomeStrings (2,2);
 for (String s : strings){
     System.out.println (s);
 }
